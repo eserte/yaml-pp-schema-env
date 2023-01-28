@@ -1,0 +1,9 @@
+/.prove
+/YAML-PP-Schema-Env-*
+/MYMETA.json
+/MYMETA.yml
+/Makefile
+/Makefile.old
+/blib
+/cover_db
+/pm_to_blib
