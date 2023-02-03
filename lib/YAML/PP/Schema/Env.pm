@@ -40,6 +40,7 @@ sub register {
             my ($constructor, $event) = @_;
 	    (my $val = $event->{value}) =~ s{\$(\{.*?\})}{
                 my $capture = $1;
+		# uncoverable branch false
 		if ($capture =~ m{\{(.*?)(?:\Q$default_separator\E(.*))?\}$}) {
 		    my($this_env, $this_default_value) = ($1, $2);
 		    my $this_value;
@@ -56,6 +57,7 @@ sub register {
 		    }
 		    $this_value;
 		} else {
+		    # uncoverable statement
 		    croak "Unexpected error: cannot parse '$capture'";
 		}
             }ge;
