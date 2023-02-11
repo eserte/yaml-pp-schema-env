@@ -72,12 +72,12 @@ jobs:
     - name: Maybe install YAML::PP ${{ matrix.yaml_pp_ver }}
       run: |
         set -e
-        cpanm --quiet --notest YAML::PP@${{ matrix.yaml_pp_ver }} || ( cat /github/home/.cpanm/work/*/build.log; false )
+        cpanm --quiet --notest YAML::PP@${{ matrix.yaml_pp_ver }} || ( cat ~/.cpanm/work/*/build.log; false )
       if: "${{ matrix.yaml_pp_ver }}"
     - name: Install dependencies
       run: |
         set -e
-        cpanm --quiet --installdeps --notest . || ( cat /github/home/.cpanm/work/*/build.log; false )
+        cpanm --quiet --installdeps --notest . || ( cat ~/.cpanm/work/*/build.log; false )
     - name: Build and test
       run: |
         set -e
