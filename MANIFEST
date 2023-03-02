@@ -1,4 +1,7 @@
 lib/YAML/PP/Schema/Env.pm
+lib/YAML/PP/Schema/Env.pod
 Makefile.PL
 MANIFEST
+MANIFEST.SKIP
+README
 t/10-basic.t
