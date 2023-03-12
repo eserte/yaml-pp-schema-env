@@ -1,5 +1,6 @@
 lib/YAML/PP/Schema/Env.pm
 lib/YAML/PP/Schema/Env.pod
+Changes
 Makefile.PL
 MANIFEST
 MANIFEST.SKIP
